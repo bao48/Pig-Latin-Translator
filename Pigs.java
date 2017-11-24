@@ -37,7 +37,12 @@ public class Pigs {
                        !(segs[i].substring(2, 3).equals("e")) && 
                        !(segs[i].substring(2, 3).equals("i")) && 
                        !(segs[i].substring(2, 3).equals("o")) && 
-                       !(segs[i].substring(2, 3).equals("u"))) {
+                       !(segs[i].substring(2, 3).equals("u")) &&
+                       !(segs[i].substring(1, 2).equals("a")) &&
+                       !(segs[i].substring(1, 2).equals("e")) && 
+                       !(segs[i].substring(1, 2).equals("i")) && 
+                       !(segs[i].substring(1, 2).equals("o")) && 
+                       !(segs[i].substring(1, 2).equals("u"))) {
                 if ((segs[i].substring(segs[i].length()-1).equals("!")) ||
                     (segs[i].substring(segs[i].length()-1).equals(".")) ||
                     (segs[i].substring(segs[i].length()-1).equals("?"))) {
@@ -67,7 +72,7 @@ public class Pigs {
                     (segs[i].substring(segs[i].length()-1).equals("?"))) {
                     piggy[i] = segs[i].substring(1, segs[i].length()-1) + segs[i].substring(0, 1) + "ay" + segs[i].substring(segs[i].length()-1);
                 } else {
-                    piggy[i] = segs[i].substring(1) + segs[i].substring(0, 2) + "ay";
+                    piggy[i] = segs[i].substring(1) + segs[i].substring(0, 1) + "ay";
                 }
             }
             
