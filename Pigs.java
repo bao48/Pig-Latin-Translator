@@ -5,7 +5,6 @@ public class Pigs {
     private final String tidbit;
     private String[] piggy;
     
-    // a bunch of constructors --> overloaded, but we're only gonna have one type of pig here, you can also put multiple paramerters in a constructor
     public Pigs(String phrase){
         tidbit = phrase;
         translate();
